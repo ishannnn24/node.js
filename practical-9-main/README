@@ -1,0 +1,12 @@
+Node Modules License & Hash Scanner
+A tool that scans node_modules, computes SHA-256 hashes for each installed package, builds a dependency graph, and reports missing licenses.
+
+Features
+Scans all top-level packages
+Recursively resolves dependencies
+Computes SHA-256 of package contents
+Detects license from package.json or LICENSE file
+Exports JSON reports
+🧪 Run
+npm install
+npm run scan

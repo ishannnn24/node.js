@@ -1,0 +1,38 @@
+# Dependency Auditor and License Reporter
+
+A custom tool designed to audit local `node_modules` for security and compliance purposes. It identifies all installed packages, analyzes their license status, and provides the foundation for full dependency graph and integrity checks.
+
+## Goal
+
+To create a tool that scans `node_modules`, computes integrity hashes (simulated), and builds a dependency graph with license detection.
+
+## Task Fulfillment
+
+| Goal | Method in `auditor.js` |
+| :--- | :--- |
+| Scans `node_modules` | Uses `fs.readdirSync` on the top-level `node_modules` directory. |
+| Computes SHA-256 | **Stubbed:** Notes that the lockfile provides integrity hashes (SHA-512 or SHA1) for the tarball, which serves a similar purpose. Full file hashing is left as an advanced implementation step. |
+| Builds dependency graph | The `traverseDependencies` function recursively resolves packages found in the `dependencies` fields of each `package.json`. |
+| Reports missing licenses | Uses the `checkLicense` function to look for common license files and the `license` field, reporting those that are missing both. |
+
+## Quick Start
+
+### Prerequisites
+
+* Node.js (LTS version recommended)
+
+### Setup
+
+1.  Make sure you are in the project root (`dependency-auditor`).
+2.  Install some sample dependencies (this creates the `node_modules` folder needed for the script to run):
+    ```bash
+    npm install lodash express
+    ```
+3.  Execute the auditor script:
+    ```bash
+    node auditor.js
+    ```
+
+### Expected Output
+
+The script will output a summary of packages found, a placeholder for the SHA-256 check, and a list of any packages where no license field or file could be detected.

@@ -1,0 +1,9 @@
+This project demonstrates how to dynamically import ESM modules (.mjs, .js) and JSON files (with assert { type: "json" }) in Node.js.
+It also includes a graceful fallback system — returning the default export if it exists, or the full module object otherwise.
+
+Features
+✅ Supports .mjs and .js ESM modules
+✅ Supports JSON imports using assert { type: "json" }
+✅ Graceful fallback for default or named exports
+✅ Clear error handling for missing or invalid files
+✅ Fully ESM project (uses "type": "module" in package.json)

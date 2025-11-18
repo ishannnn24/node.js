@@ -1,0 +1,13 @@
+{
+  "name": "dynamic-import",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utility to dynamically import ESM (.js/.mjs) and JSON files with graceful fallback.",
+  "main": "src/dynamicImport.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["esm", "dynamic import", "json", "module", "javascript"],
+  "author": "Your Name",
+  "license": "MIT"
+}

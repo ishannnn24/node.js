@@ -1,0 +1,7 @@
+
+{
+    "appName": "Dynamic Import Demo",
+    "env": "development",
+    "features": ["dynamic import", "json assert", "fallbacks"]
+  }
+  

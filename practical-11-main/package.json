@@ -1,0 +1,13 @@
+
+{
+  "name": "website-path-demo",
+  "version": "1.0.0",
+  "description": "Practical 11",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
